@@ -1,0 +1,16 @@
+body {
+  background-color: lightgray;
+  // background-image: url(assets/bg.jpg);
+  // background-size: cover;
+}
+.main-content {
+  width: 80%;
+  margin: 0 auto;
+}
+
+@import "variables";
+@import "header";
+@import "articles";
+@import "skaters";
+@import "boards";
+@import "footer";

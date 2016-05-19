@@ -1,0 +1,27 @@
+.articles div {
+  width: 100%;
+  background-color: $articleBoxColor;
+  height: 200px;
+  display: inline-block;
+  margin-top: 5px;
+  h2, h3, h4, p {
+    width:80%;
+    margin: 10px auto;
+  }
+  h2 {
+    font-size: .8em;
+  }
+  h3 {
+    font-size: .7em;
+    width: 100%;
+    text-align: center;
+  }
+  h4 {
+    font-size: .6em;
+    color: $dateTextColor;
+  }
+  p {
+    font-size: .5em;
+    color: #323232;
+  }
+}
