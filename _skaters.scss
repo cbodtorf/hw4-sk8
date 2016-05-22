@@ -1,0 +1,118 @@
+.skaters {
+  width: 100%;
+  margin: 0 auto;
+  display: inline-block;
+  text-align: center;
+  h3 {
+    color: white;
+  }
+}
+.skaterBox {
+  height: 100px;
+  border: $skaterBorder;
+  margin-top: 10px;
+  box-shadow: $boxShadow;
+  font-size: 1.6em;
+}
+
+// Lance & Rod
+
+div.smallOne {
+  background-image: url(assets/sk8er-4.png);
+  background-size: 100%;
+  background-position: 0 -46px;
+  &:hover {
+    background-image: $hoverGradient, url(assets/sk8er-4.png);
+  }
+}
+div.smallTwo {
+  background-image: url(assets/sk8er-3.png);
+  background-size: 100%;
+  background-position: 0 -46px;
+  &:hover {
+    background-image: $hoverGradient, url(assets/sk8er-3.png);
+  }
+}
+
+// Steve & Tommy
+div.wideBox {
+  background-image: url(assets/sk8er-1.png);
+  background-size: 100%;
+  background-position: 0 -46px;
+  &:hover {
+    background-image: $hoverGradient, url(assets/sk8er-1.png);
+  }
+}
+div.tallBox {
+  background-image: url(assets/sk8er-2.png);
+  background-size: 125%;
+  background-position: -54px -70px;
+  &:hover {
+    background-image: $hoverGradient, url(assets/sk8er-2.png);
+  }
+}
+
+// MEDIA QUERIES
+
+//MEDIA TABLET
+@media only screen and (min-width: 768px) {
+
+  .smallBox {
+    display: inline-flex;
+    width: 100%;
+    justify-content: space-between;
+    h3 {
+      margin-top: 80px;
+    }
+  }
+  div.smallOne, div.smallTwo {
+    // min-width: 200px;
+    height: 200px;
+    background-size: 135%;
+    flex-grow: 1;
+  }
+  div.smallOne {
+    background-position: -80px 0px;
+  }
+  div.smallTwo {
+    background-position: 0 0px;
+    margin-left: 10px;
+  }
+  div.tallBox {
+    background-size: 105%;
+    background-position: -54px -90px;
+  }
+}
+
+//MEDIA DESKTOP
+
+@media only screen and (min-width: 1024px) {
+
+.threeBox {
+  width: 66%;
+  display: inline-block;
+  // align-content: flex-start;
+}
+div.tallBox {
+  display: inline-flex;
+  width: 30%;
+  margin-left: 5px;
+  align-items: stretch;
+  vertical-align: top;
+  height: 278px;
+  background-size: cover;
+  background-position: -230px 0px;
+}
+div.smallOne, div.smallTwo {
+  height: 130px;
+  h3 {
+    margin-top: 30px;
+  }
+}
+.wideBox {
+  height: 130px;
+}
+div.smallOne {
+  background-position: -40px 0px;
+}
+}

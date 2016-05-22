@@ -1,0 +1,28 @@
+// MEDIA QUERIES
+
+//MEDIA PHONE
+
+@media (min-width: 640px) {
+
+  .main-content {
+    width: 79%;
+  }
+}
+
+//MEDIA TABLET
+
+@media only screen and (min-width: 768px) {
+
+  .main-content {
+    width: 74%;
+  }
+}
+
+//MEDIA DESKTOP
+
+@media only screen and (min-width: 1024px) {
+
+  .main-content {
+    width: 57%;
+  }
+}

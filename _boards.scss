@@ -1,0 +1,94 @@
+.boards {
+  background-color: white;
+  height: 270px;
+  width: 100%;
+  margin: 10px auto;
+  box-shadow: $boxShadow;
+  overflow: hidden;
+  // border: $skaterBorder;
+  img {
+    height: 230px;
+    display: inline-block;
+    margin: 20px 10px;
+  }
+  .marquee {
+    width: 120%;
+    height: 270px;
+    overflow: hidden;
+  }
+}
+
+//KEYFRAME ANIMATIONS
+
+// .boards:hover { ***** hover to start animation (don't know how to stop)
+  .first {
+ -webkit-animation: bannermove 15s linear infinite;
+    -moz-animation: bannermove 15s linear infinite;
+     -ms-animation: bannermove 15s linear infinite;
+      -o-animation: bannermove 15s linear infinite;
+         animation: bannermove 15s linear infinite;
+  }
+// }
+
+@keyframes "bannermove" {
+ 0% {
+    margin-left: 0px;
+ }
+ 100% {
+    margin-left: -800px;
+ }
+}
+
+@-moz-keyframes bannermove {
+ 0% {
+   margin-left: 0px;
+ }
+ 100% {
+   margin-left: -800px;
+ }
+}
+
+@-webkit-keyframes "bannermove" {
+ 0% {
+   margin-left: 0px;
+ }
+ 100% {
+   margin-left: -800px;
+ }
+}
+
+@-ms-keyframes "bannermove" {
+ 0% {
+   margin-left: 0px;
+ }
+ 100% {
+   margin-left: -800px;
+ }
+}
+
+@-o-keyframes "bannermove" {
+ 0% {
+   margin-left: 0px;
+ }
+ 100% {
+   margin-left: -800px;
+ }
+}
+
+.marquee img {
+ -webkit-transition: all 0.5s ease;
+ -moz-transition: all 0.5s ease;
+ -o-transition: all 0.5s ease;
+ -ms-transition: all 0.5s ease;
+ transition: all 0.5s ease;
+}
+
+.marquee img:hover {
+ -webkit-transform: scale(1.14);
+ -moz-transform: scale(1.14);
+ -o-transform: scale(1.14);
+ -ms-transform: scale(1.14);
+ transform: scale(1.14);
+ cursor: pointer;
+
+}

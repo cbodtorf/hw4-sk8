@@ -1,66 +1,127 @@
 // TOP NAV
 .top {
   display: inline-block;
-  vertical-align: top;
   width: 100%;
 }
-header h5 {
-  width: 30%;
-  margin: 0 auto;
+header span {
+  width: 100%;
+  margin-top: 10px;
+  height: 100%;
   color: $mainTextColor;
   display: inline-block;
-  font-size: .5em;
+  font-size: 1em;
+  text-align: center;
 }
+// SOCIAL
 ul.social {
-  width: 60%;
-  margin: 0;
+  width: 100%;
+  margin: 8px 0 0 0;
+  height: 50px;
   padding: 0;
   display: inline-block;
+  text-align: center;
 }
-li {
-  width: 20%;
-  background-color: $navBoxColor;
+.social li {
+  width: 50px;
+  height: 50px;
   display: inline-block;
   padding: 0;
+  margin: 0;
+  box-shadow: $boxShadow;
   a {
     text-decoration: none;
+    display: inline-block;
     color: $mainTextColor;
     width: 100%;
+    height: 50px;
+    margin: 0;
   }
 }
-// MAIN NAV
-nav ul {
-  width: 100%;
-  margin: 0 auto;
-  padding: 10px 0 10px 0;
-  li, a {
-    font-size: 6px;
-    width: 23%;
-    height: 20px;
-    margin: 0 auto;
+.social {
+  img {
+    height: auto;
+    width: auto;
+    max-width: 50px;
+    max-height: 50px;
+    opacity: 0.5;
+    margin-top: 9px;
   }
-  a {
+  li.fbk {
+    background-color: #455995;
+  }
+  li.rss {
+    background-color: #ca8f3c;
+  }
+  li.twt {
+    background-color: #6c8dc6;
+  }
+  li.ytb {
+    background-color: #b03932;
+  }
+}
+// DOTS
+
+// MAIN NAV
+nav {
+  margin: 20px auto 10px auto;
+  ul {
+    list-style-type: none;
     width: 100%;
-    margin: 6px auto;
-    text-align: center;
-    display: inline-block;
+    padding: 0;
+    margin: 0;
   }
   li {
-
+    width: 99%;
+    height: 60px;
+    margin: 0 2.5px 15px 2.5px;
+    background-color: $navBoxColor;
+    list-style-type: none;
+    text-align: center;
+    box-shadow: $boxShadow;
+  }
+  a {
+    text-decoration: none;
+    display: inline-block;
+    color: $mainTextColor;
+    width: 100%;
+    margin-top: 20px;
   }
 }
 // TOP IMG
 div.imgScroll {
-  border: 4px solid white;
-  width: 100%;
-  height: 200px;
-  margin: 0 auto;
+  border: $mainBorder;
+  box-shadow: $boxShadow;
+  width: 90%;
+  height: 290px;
+  margin: 5px auto;
   background-image: url(assets/top-image.png);
   background-size: 180%;
   background-position: 50% 20%;
 }
-.imgTop img {
-  height: 100px;
-  width: 200px;
-  margin: 3rem;
+.logo img {
+  height: 170px;
+  width: 280px;
+  margin: 4rem 1.8rem;
+}
+
+//MEDIA QUERIES
+
+@media only screen and (min-width: 768px) {
+  .top {
+    width: 100%;
+    text-align: right;
+    ul {
+    }
+  }
+  nav ul li {
+    width: 23.4%;
+    display: inline-block;
+  }
+  .top span, ul.social {
+    width: auto;
+  }
+  .top span {
+    margin-top: 20px;
+    margin-right: 50px;
+  }
 }

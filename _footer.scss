@@ -1,0 +1,123 @@
+footer {
+  width: 100%;
+  background-color: white;
+  box-shadow: $boxShadow;
+  margin: 5px 0 25px 0;
+  .contactHeader, .social-footer, p {
+    display: inline-block;
+    margin-left: 20px;
+  }
+  .contactHeader {
+    margin-top: 20px;
+  }
+  p {
+    font-size: .7em;
+    margin: 6px 20px 0 20px;
+  }
+}
+
+// SOCIAL
+.social-footer {
+  padding: 0;
+  li {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    background-color: gray;
+    a {
+      text-decoration: none;
+      display: inline-block;
+      color: $mainTextColor;
+      width: 100%;
+      height: 50px;
+      margin: 0;
+    }
+  }
+  img {
+    height: auto;
+    width: auto;
+    max-width: 50px;
+    max-height: 50px;
+    opacity: 0.5;
+    margin-top: 9px;
+    margin-left: 9px;
+  }
+
+  li.fbk {
+    background-color: #455995;
+  }
+  li.rss {
+    background-color: #ca8f3c;
+  }
+  li.twt {
+    background-color: #6c8dc6;
+  }
+  li.ytb {
+    background-color: #b03932;
+  }
+}
+
+// FORM
+
+form {
+  text-align: center;
+  margin-right: 20px;
+}
+// #name input[type=text] {
+//   margin-left: 10px;
+// }
+
+textarea {
+  padding-top: 10px;
+}
+
+input, textarea {
+  width: 75%;
+  margin-top: 10px;
+  padding-left: 10px;
+  color: #aeaeae;
+  font-size: 1em;
+}
+#name, #email, #message {
+  box-shadow: inset 2px 2px 0 #b2b2b2;
+  border: 1px solid #8f8f8f;
+}
+#name, #email {
+  height: 50px;
+}
+#message {
+  height: 150px;
+}
+
+#submit_button {
+margin-bottom: 20px;
+width: 75%;
+height: 50px;
+background-color: $navBoxColor;
+border: none;
+color: $mainTextColor;
+}
+
+// MEDIA QUERIES
+
+//MEDIA DESKTOP
+
+@media only screen and (min-width: 1024px) {
+
+footer {
+  display: inline-flex;
+  justify-content: space-between;
+}
+.contact {
+  width: 45%;
+}
+.form {
+  flex-grow: 1;
+  margin-right: 0;
+}
+#contact-form {
+  margin-right: 0;
+}
+}

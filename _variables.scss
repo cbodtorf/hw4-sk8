@@ -5,11 +5,12 @@ $readMoreTextColor: #b4292e;
 $formTextColor: gray;
 $articleTextColor: #5c5c5c;
 // BORDER
-$mainBorder: 4px solid white;
-$skaterBorder: 2px solid white;
+$mainBorder: 6px solid white;
+$skaterBorder: 4px solid white;
 // BOX SHADOW
-$boxShadow: 0 10px rgba(0, 0, 0, 0.2);
+$boxShadow: 0 4px 0 rgba(255, 255, 255, 0.3);
 // BOX COLOR
 $navBoxColor: #b4292e;
 $borderMain: white; /* offwhite for articles and form */
 $articleBoxColor: #f9fffa;
+$hoverGradient: linear-gradient(to bottom, rgba(0,0,0,0.5) 0%,rgba(0,0,0,0.5) 100%);
