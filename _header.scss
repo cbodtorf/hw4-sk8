@@ -59,7 +59,6 @@ ul.social {
     background-color: #b03932;
   }
 }
-// DOTS
 
 // MAIN NAV
 nav {
@@ -83,6 +82,7 @@ nav {
     text-decoration: none;
     display: inline-block;
     color: $mainTextColor;
+    font-weight: bold;
     width: 100%;
     margin-top: 20px;
   }
@@ -91,17 +91,141 @@ nav {
 div.imgScroll {
   border: $mainBorder;
   box-shadow: $boxShadow;
-  width: 90%;
+  width: 93%;
   height: 290px;
-  margin: 5px auto;
-  background-image: url(assets/top-image.png);
-  background-size: 180%;
-  background-position: 50% 20%;
+  margin: 5px auto 40px auto;
+  background-image: url(assets/top-grind.jpg);
+  background-size: cover;
+  div.scroll-box {
+    height: 290px;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+    img {
+      position: absolute;
+      left: 0;
+    }
+  }
+  img.num0 {
+    width: 100%;
+    height: 100%;
+  }
+  img.num1 {
+    width: 100%;
+    height: 100%;
+  }
+  img.num2 {
+    width: 150%;
+    height: 130%;
+  }
 }
 .logo img {
-  height: 170px;
+  height: 200px;
+  position: absolute;
   width: 280px;
   margin: 4rem 1.8rem;
+  z-index: 10;
+}
+div.circles {
+  height: 20px;
+  width: 100%;
+  margin: 20px auto;
+  text-align: center;
+  display: inline-block;
+  label {
+    display: inline-block;
+    position: relative;
+    width: 7px;
+    height: 7px;
+    margin: 3px;
+    border: 7px solid white;
+    border-radius: 50%;
+    background-color: white;
+    box-shadow: $boxShadow;
+    cursor: pointer;
+  }
+}
+
+//KEYFRAME ANIMATIONS
+//IMAGE SCROLL FADE
+.scroll-box .scroll-img {
+  position: absolute;
+	opacity: 0;
+	-webkit-animation: image-fade 15s linear infinite;
+	-moz-animation: image-fade 15s linear infinite;
+	-ms-animation: image-fade 15s linear infinite;
+	animation: image-fade 15s linear infinite;
+}
+
+scroll-box img.num0 {
+	-webkit-animation-delay: 5s;
+	-moz-animation-delay: 5s;
+	-ms-animation-delay: 5s;
+	animation-delay: 5s;
+}
+.scroll-box img.num1 {
+	-webkit-animation-delay: 10s;
+	-moz-animation-delay: 10s;
+	-ms-animation-delay: 10s;
+	animation-delay: 10s;
+}
+
+@-webkit-keyframes image-fade {
+    0%, 40%, 100% { opacity: 0; }
+    5%, 33% { opacity: 1;}
+}
+@-moz-keyframes image-fade {
+    0%, 40%, 100% { opacity: 0; }
+    5%, 33% { opacity: 1;}
+}
+@-ms-keyframes image-fade {
+    0%, 20%, 100% { opacity: 0; }
+    5%, 33% { opacity: 1;}
+}
+@keyframes image-fade {
+  0%, 40%, 100% { opacity: 0; }
+  5%, 33% { opacity: 1;}
+}
+
+// INDICATOR CIRCLES
+label {
+  -webkit-animation: indicator 15s infinite;
+  -moz-animation: indicator 15s infinite;
+  -ms-animation: indicator 15s infinite;
+  animation: indicator 15s infinite;
+}
+
+label.num1 {
+  -webkit-animation-delay: 5s;
+	-moz-animation-delay: 5s;
+	-ms-animation-delay: 5s;
+  animation-delay: 5s
+}
+label.num2 {
+  -webkit-animation-delay: 10s;
+	-moz-animation-delay: 10s;
+	-ms-animation-delay: 10s;
+  animation-delay: 10s
+}
+
+@-webkit-keyframes indicator {
+  0%, 40%, 100% { background-color: white; }
+  5%, 33% { background-color: $navBoxColor;}
+}
+@-moz-keyframes indicator {
+  0%, 40%, 100% { background-color: white; }
+  5%, 33% { background-color: $navBoxColor;}
+}
+@-ms-keyframes indicator {
+  0%, 40%, 100% { background-color: white; }
+  5%, 33% { background-color: $navBoxColor;}
+}
+@keyframes indicator {
+  0%, 40%, 100% { background-color: white; }
+  5%, 33% { background-color: $navBoxColor;}
 }
 
 //MEDIA QUERIES
@@ -110,13 +234,16 @@ div.imgScroll {
   .top {
     width: 100%;
     text-align: right;
-    ul {
-    }
   }
   nav ul li {
     width: 23.4%;
     display: inline-block;
+    a {
+      font-size: 0.7em;
+      margin-top: 25px;
+    }
   }
+
   .top span, ul.social {
     width: auto;
   }
