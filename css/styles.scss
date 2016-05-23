@@ -1,0 +1,60 @@
+@import "variables";
+
+body {
+  background-color: black;
+}
+.back {
+  position: absolute;
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0.5) 0%,rgba(0,0,0,0.5) 100%), url(assets/bg.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+//INDICATOR ARROW
+div#arrow {
+  display: none;
+}
+#arrow span {
+  color: $mainTextColor;
+  display: inline-block;
+  position: relative;
+  top: 20px;
+  margin-left: 20px;
+  font-weight: bold;
+  font-size: 1em;
+}
+#arrow {
+  background-color: $navBoxColor;
+  display: inline-block;
+  height: 58px;
+  margin-left: 40px;
+  margin-top: 83px;
+  position: fixed;
+  width: 120px;
+  filter: drop-shadow(16px 16px black);
+  box-shadow: $boxShadow;
+}
+#arrow:before {
+  border-left: 20px solid #b4292e;
+  border-top: 29px solid transparent;
+  border-bottom: 29px solid transparent;
+  content: "";
+  height: 0px;
+  left: 120px;
+  position: absolute;
+  -webkit-filter: drop-shadow($boxShadow);
+}
+
+
+.main-content {
+  width: 93%;
+  margin: 0 auto;
+  z-index: 3;
+}
+
+@import "header";
+@import "articles";
+@import "skaters";
+@import "boards";
+@import "footer";
+@import "media-query";
