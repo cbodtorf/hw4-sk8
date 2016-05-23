@@ -6,7 +6,7 @@
   align-content: space-between;
   margin-top: 10px;
   box-shadow: $boxShadow;
-  h2, span.date, span.readMore, p {
+  h2, span.date, p {
     width:80%;
     margin: 6px 0 6px 25px;
   }
@@ -22,9 +22,8 @@
     text-align: center;
     font-weight: bold;
     color: $readMoreTextColor;
-    margin-bottom: 20px;
-    // margin-right: 30px;
     cursor: pointer;
+    margin-top: 5px;
   }
   span.date {
     font-size: .8em;
@@ -73,13 +72,13 @@ span.bracket {
   &:before {
     content:'[ ';
     left: 0;
-    line-height:40px;
+    // line-height:40px;
   }
   &:after {
     content:']';
     left: 0;
     right: 0;
-    line-height:40px;
+    // line-height:40px;
     padding-left: 4px;
   }
   &:after, &:before {

@@ -322,11 +322,14 @@ label.num2 {
   .top {
     width: 100%;
     text-align: right; }
+  nav {
+    width: 110%;
+    margin-left: -20px; }
   nav ul li {
     width: 23.4%;
     display: inline-block; }
     nav ul li a {
-      font-size: 0.7em;
+      font-size: 0.6em;
       margin-top: 20px; }
   ul.dots {
     display: inline-block; }
@@ -344,7 +347,7 @@ label.num2 {
   align-content: space-between;
   margin-top: 10px;
   box-shadow: 0 4px 0 rgba(255, 255, 255, 0.3); }
-  .articles div h2, .articles div span.date, .articles div span.readMore, .articles div p {
+  .articles div h2, .articles div span.date, .articles div p {
     width: 80%;
     margin: 6px 0 6px 25px; }
   .articles div h2 {
@@ -358,8 +361,8 @@ label.num2 {
     text-align: center;
     font-weight: bold;
     color: #b4292e;
-    margin-bottom: 20px;
-    cursor: pointer; }
+    cursor: pointer;
+    margin-top: 5px; }
   .articles div span.date {
     font-size: .8em;
     color: gray;
@@ -389,13 +392,11 @@ span.bracket {
     transform: scale(1.2); }
   span.bracket:before {
     content: '[ ';
-    left: 0;
-    line-height: 40px; }
+    left: 0; }
   span.bracket:after {
     content: ']';
     left: 0;
     right: 0;
-    line-height: 40px;
     padding-left: 4px; }
   span.bracket:after, span.bracket:before {
     position: relative;

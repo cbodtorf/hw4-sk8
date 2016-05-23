@@ -300,11 +300,15 @@ label.num2 {
     width: 100%;
     text-align: right;
   }
+  nav {
+    width: 110%;
+    margin-left: -20px;
+  }
   nav ul li {
     width: 23.4%;
     display: inline-block;
     a {
-      font-size: 0.7em;
+      font-size: 0.6em;
       margin-top: 20px;
     }
   }
